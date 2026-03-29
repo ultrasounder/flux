@@ -152,7 +152,7 @@ class FluxViewer:
         # Energy density (E^2)
         ax6 = fig.add_subplot(2, 3, 6)
         energy = field_data ** 2
-        ax6.hist(energy.flatten(), bins=100, cmap='viridis', edgecolor='black')
+        ax6.hist(energy.flatten(), bins=100, edgecolor='black')
         ax6.set_xlabel("Energy Density (E²)")
         ax6.set_ylabel("Voxel Count")
         ax6.set_title("Energy Distribution")
